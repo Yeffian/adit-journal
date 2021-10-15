@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
+            <Image className={utilStyles.zoomImage}
               priority
               src="/images/test_profile.jpg"
               className={utilStyles.borderCircle}
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <Image
+                <Image className={utilStyles.zoomImage}
                   priority
                   src="/images/test_profile.jpg"
                   className={utilStyles.borderCircle}
